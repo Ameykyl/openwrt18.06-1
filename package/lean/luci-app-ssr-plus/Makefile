@@ -1,7 +1,7 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=luci-app-ssr-plus
-PKG_VERSION:=1.42
+PKG_VERSION:=1.43
 PKG_RELEASE:=8
 PKG_CONFIG_DEPENDS:= CONFIG_PACKAGE_$(PKG_NAME)_INCLUDE_Shadowsocks \
 	CONFIG_PACKAGE_$(PKG_NAME)_INCLUDE_V2ray \
@@ -66,7 +66,7 @@ config PACKAGE_$(PKG_NAME)_INCLUDE_dnsforwarder
 	default n
 
 config PACKAGE_$(PKG_NAME)_INCLUDE_ChinaDNS
-	bool "chiandns"
+	bool "chinadns"
 	default n
 
 config PACKAGE_$(PKG_NAME)_INCLUDE_haproxy
